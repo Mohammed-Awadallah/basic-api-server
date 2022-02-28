@@ -9,7 +9,7 @@ const errorHandler = require('./error-handlers/500');
 const logger = require('./middleware/logger');
 const foodRouter = require('./routes/food.route');
 const clothesRouter = require('./routes/clothes.route');
-// server.use(logger);
+server.use(logger);
 server.use(express.json());
 server.use(foodRouter);
 server.use(clothesRouter);
